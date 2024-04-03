@@ -47,3 +47,22 @@ const logoImage = document.getElementById('logo-image');
 logoImage.addEventListener('click', function() {
   location.reload();
 });
+
+
+const button = document.getElementById('CTA');
+
+button.addEventListener('click', function() {
+  const email = 'alessandropinto@outlook.it';
+  const subject = 'Website Inquiry'; // Optional
+  const body = 'Hello, I have a question...'; // Optional
+
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+  // Simulate clicking a link
+  const hiddenLink = document.createElement('a');
+  hiddenLink.href = mailtoLink;
+  hiddenLink.style.display = 'none'; 
+  document.body.appendChild(hiddenLink);
+  hiddenLink.click();
+  document.body.removeChild(hiddenLink);
+});

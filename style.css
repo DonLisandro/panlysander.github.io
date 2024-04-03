@@ -27,7 +27,7 @@ header {
 
   .logo {
     margin-left: 5%;
-    margin-top: 1%;
+    margin-top: 0.3%;
     cursor: pointer;
   }
   
@@ -50,13 +50,18 @@ header {
 
   #about {
     font-size: 22px;
-    margin-top: 30%;
+    margin-top: 31.5%;
     text-align: left;
     margin-left: 15%;
+    color: white;
   } 
 
+  p {
+    line-height: 1.5;
+  }
+
   #about h2 {
-      color: red;
+      color: white;
     }
 
   h1 {
@@ -68,9 +73,26 @@ header {
   }
 
   h3 {
-    color: #333;
+    color: white;
     text-align: left;
-    font-size: 50px;
+    font-size: 40px;
+    margin-top: 7%;
+    margin-left: 15%;
+  }
+#contact p {
+  margin-top: 0.5%;
+  margin-bottom: 1%; /* Adjust the '5px' value to your liking */
+  margin-left: 15%;
+  font-size: 20px;
+  color: white;
+
+
+}
+
+    h4 {
+    color: white;
+    text-align: left;
+    font-size: 40px;
     margin-top: 7%;
     margin-left: 15%;
   }
@@ -98,7 +120,7 @@ header {
   nav a {
     font-size: 30px;
     text-decoration: none;
-    color: #333;
+    color: #000;
     font-weight: bold;
   }
   
@@ -110,7 +132,7 @@ header {
     left: 0;
     width: 0;
     height: 5px;
-    background-color: #333;
+    background-color: #000;
     transition: width 0.3s ease;
   }
   
@@ -156,4 +178,5 @@ header {
 footer {
   text-align: center;
   padding: 15px;
+  color: white;
 }
